@@ -7,7 +7,7 @@ function Input(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(username);
+        window.location = "/collection"
     }
 
     return( 
