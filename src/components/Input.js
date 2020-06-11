@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
 
 
+
 function Input(){
 
     const [username, setUsername] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e) => {        
         e.preventDefault();
-        window.location = "/collection"
+        window.location = "/" + username
     }
 
     return( 

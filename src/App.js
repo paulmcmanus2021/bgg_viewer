@@ -1,6 +1,6 @@
 
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"; 
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom"; 
 import './App.css';
 import HomeContainer from '../src/containers/HomeContainer'
 import CollectionContainer from '../src/containers/CollectionContainer'
@@ -13,13 +13,9 @@ const App = () => {
             <Fragment>
               <Switch>
 
-                <Route exact path="/">
-                  <HomeContainer />
-                </Route>
+                <Route exact path="/" component={HomeContainer} />
 
-                <Route exact path="/collection">
-                  <CollectionContainer />
-                </Route>
+                <Route path="/:id" component={CollectionContainer} />
                 
               </Switch>
             </Fragment>
