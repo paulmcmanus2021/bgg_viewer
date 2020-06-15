@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Carousel from '../components/Carousel'
 
 const CollectionContainer = ({ match }) => {
 
@@ -22,7 +23,11 @@ const CollectionContainer = ({ match }) => {
     return (
         <div className="collection-container">
            <h1>{username}'s collection</h1>
-           <button onClick={(e) => window.location="/"}>Home</button>
+           <Carousel userCollection={collection} />
+
+            <div className="button">
+                <button onClick={(e) => window.location="/"}>Home</button>
+            </div>
         </div>
     );
 }

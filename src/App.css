@@ -1,11 +1,5 @@
 .App {
   text-align: center;
-  background-image: url("https://image.freepik.com/free-photo/dice-yellow-background_127657-13663.jpg");
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  background-size: cover;
-  background-position: center;
 }
 
 .App-link {
@@ -23,6 +17,15 @@
 }
 
 .collection-container {
-  text-align: justify
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  padding-top: 1em;
+}
+
+.slide {
+  padding-bottom: 1em;
 }
 
