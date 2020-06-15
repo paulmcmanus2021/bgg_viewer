@@ -11,7 +11,6 @@ const CollectionContainer = ({ match }) => {
 
     const fetchData = () => {
         axios.get(`${fetchURL}`).then(res => {
-            console.log(res.data); 
             setCollection(res.data)        
         });
     };
