@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import './App.css';
 import HomeContainer from '../src/containers/HomeContainer'
 import CollectionContainer from '../src/containers/CollectionContainer'
+import ErrorContainer from '../src/containers/ErrorContainer'
 
 const App = () => {
 
@@ -14,6 +15,8 @@ const App = () => {
               <Switch>
 
                 <Route exact path="/" component={HomeContainer} />
+
+                <Route path="/not_found/:id" component={ErrorContainer} />
 
                 <Route path="/:id" component={CollectionContainer} />
                 

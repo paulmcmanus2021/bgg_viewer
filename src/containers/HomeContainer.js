@@ -7,7 +7,7 @@ function HomeContainer(){
     return(
         <div className="home-container">
             <Header />
-            <Input />
+            <Input/>
         </div>
     )
 }

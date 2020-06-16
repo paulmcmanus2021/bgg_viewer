@@ -1,29 +1,32 @@
 import React from 'react';
+import Card from './Card'
 
 function Carousel(props) {
 
-const gamesArray = props.userCollection
-console.log(gamesArray);
+
+const gamesList = props.userCollection.map((game, index) => {
+    return (
+        <Card
+            key={index}
+            number={index + 1}
+            totalGames={props.userCollection.length}
+            title={game.name}
+            image={game.thumbnail}
+            plays={game.numPlays}
+            owned={game.owned}
+            expansion={game.isExpansion}
+        >
+        </Card>
+    )
+  })
 
 
 
 
 return (
-    <div className="carousel">
-        {gamesArray.map((game, index) => {
-            
-                return (
-                <div key={index} className="slide">
-                    <div className="numbertext">{index + 1} / {gamesArray.length}</div>
-                    <img src={game.thumbnail} />
-                    <div className="title">{game.name}</div>
-                    <div className="play-count">Plays: {game.numPlays}</div>
-                </div>
-            );
-            
-            
-        })}
-    </div>  
+    <div className="slideshow-container">
+        {gamesList}
+    </div>
     );
 }
 

@@ -13,10 +13,10 @@ function Input(){
 
     return( 
         
-            <form onSubmit={handleSubmit} >
-                <input type="text" placeholder="e.g. paulmcmanus" value={username} onChange={(e) => setUsername(e.target.value)} required/>
-                <input type="submit" value="Submit" />
-            </form>
+        <form onSubmit={handleSubmit} >
+            <input type="text" placeholder="e.g. paulmcmanus" value={username} onChange={(e) => setUsername(e.target.value)} required/>
+            <input type="submit" value="Submit" />
+        </form>
         
     )
 }
