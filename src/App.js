@@ -5,6 +5,7 @@ import './App.css';
 import HomeContainer from '../src/containers/HomeContainer'
 import CollectionContainer from '../src/containers/CollectionContainer'
 import ErrorContainer from '../src/containers/ErrorContainer'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import Carousel from '../components/Carousel'
+import Collection from '../components/Collection'
+import BootstrapCarousel from '../components/BootstrapCarousel'
 import Input from '../components/Input'
 
 const CollectionContainer = ({ match }) => {
@@ -39,7 +40,7 @@ const CollectionContainer = ({ match }) => {
             <h3> Try another BGG user </h3>
            <Input />
            <br />
-           <Carousel userCollection={collection} /> 
+           <BootstrapCarousel userCollection={collection} /> 
             </>
             :
             <p> Searching...</p>}

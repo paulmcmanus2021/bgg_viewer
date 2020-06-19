@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #E2dccd;
 }
 
 .App-link {
@@ -16,17 +17,32 @@
   text-align: justify;
 }
 
-.collection-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .button {
   padding-top: 1em;
   padding-bottom: 3rem;
 }
 
-.slide {
-  padding-bottom: 1em;
+.collection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.carousel {
+  display: flex;
+  max-width: 40%;
+}
+
+
+.carousel-indicators li{
+  background-color:black !important;
+  position: relative !important;
+  bottom: 1em !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color:black !important;
+  border-radius: 100%;
+
+  
+}
